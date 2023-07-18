@@ -1,0 +1,71 @@
+.card{
+  width: 100%;
+  overflow: hidden;
+  padding: 5px;
+}
+.card img{
+  width: 100%;
+}
+.card .text_all{
+  padding: 15px 10px;
+}
+.card .text_all .text{
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+.line-clamp{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 14ch; /* Harf chegarasini belgilaydigan o'lcham */
+}
+.link{
+  width: 100%;
+  border: 1px solid gray;
+  text-align: center;
+  padding: 9px 0;
+  border-radius: 5px;
+}
+a{
+  color: black !important;
+  text-decoration: none !important;
+  width: 100% !important;
+}
+
+@media (max-width: 1080px) {
+  .Flex{
+    display: grid !important;
+    grid-template-columns: repeat(3,1fr) !important;
+    gap: 30px !important;
+  }
+}
+@media (max-width: 890px) {
+  .Flex{
+    display: grid !important;
+    grid-template-columns: repeat(3,1fr) !important;
+    gap: 19px !important;
+  }
+}
+@media (max-width: 795px) {
+  .Flex{
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 28px !important;
+  }
+}
+@media (max-width: 600px) {
+  .Flex{
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 20px !important;
+  }
+}
+@media (max-width: 500px) {
+  .Flex{
+    display: grid !important;
+    grid-template-columns: repeat(1,1fr) !important;
+    gap: 30px !important;
+  }
+}

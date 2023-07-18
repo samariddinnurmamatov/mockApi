@@ -1,0 +1,39 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  justify-content: space-between !important;
+  gap: 30px;
+  width: 100%;
+  padding: 0px 5px;
+}
+.contaner{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .grid{
+    gap: 23px;
+  }
+}
+@media (max-width: 900px) {
+  .grid{
+    grid-template-columns: repeat(3,1fr);
+    gap: 23px;
+  }
+}
+@media (max-width: 700px) {
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .line-clamp{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10ch; /* Harf chegarasini belgilaydigan o'lcham */
+  }
+}

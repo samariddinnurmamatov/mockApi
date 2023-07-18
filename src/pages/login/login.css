@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.abody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  overflow: hidden;
+}
+.logn-all{
+  position: relative;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logn-all i{
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.logn-all i:nth-child(1){
+  --clr: #00ff0a;
+  border-radius: 43% 57% 74% 36% / 44% 30% 70% 56%;
+  animation: animate 4s linear infinite;
+}
+.logn-all i:nth-child(2){
+  --clr: #ff0057;
+  border-radius: 62% 38% 42% 58% / 52% 38% 62% 48%;
+  animation: animate 3s linear infinite;
+}
+.logn-all i:nth-child(3){
+  --clr: #fffd44;
+  border-radius: 44% 50% 42% 58% / 37% 65% 35% 63%;
+  animation: animate2 7s linear infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.logn-all:hover i{
+  border: 5px solid var(--clr); 
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+.logn-all .login{
+ position: absolute; 
+ width: 300px;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 20px;
+}
+.logn-all .login h2{
+  font-size: 2em;
+  color: white;
+}
+.logn-all .login .inputBx{
+  position: relative;
+  width: 100%;
+}
+.logn-all .login .inputBx input{
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: white;
+  box-shadow: none;
+  outline: none;
+}
+.logn-all .login .inputBx input::placeholder{
+  color: rgba(255, 255, 255, 0.75);
+}
+.logn-all .login .inputBx input[type="submit"]{
+  background-color: #4070f4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.logn-all .login .links{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logn-all .login .links a{
+  color: white;
+  text-decoration: none;
+}
