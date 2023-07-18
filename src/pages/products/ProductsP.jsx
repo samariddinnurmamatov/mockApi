@@ -6,7 +6,7 @@
 // import Loading from "../../components/loading";
 // import CardCategory from "../../components/CardCategory";
 // import Free from "../../components/Free";
-import {  Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProductPost from "../../components/ProductPost";
 import axios from "axios";
 import { toast } from "react-toastify";
